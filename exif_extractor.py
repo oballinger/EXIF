@@ -9,7 +9,6 @@ import exifread
 import folium
 #import geopandas as gpd
 #from shapely.geometry import Polygon
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 

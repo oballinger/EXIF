@@ -1,0 +1,5 @@
+exifread
+pandas
+streamlit
+folium
+pillow_heif

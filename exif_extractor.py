@@ -34,17 +34,18 @@ def overwrite(dir):
 def extract_metadata(source_dir):
 
     img_list=makelist(['.jpg', '.jpeg'], source_dir)
-    md=pd.DataFrame()
-    keys = ['EXIF DateTimeOriginal', 'Image Make', 'Image Model', 'EXIF BodySerialNumber','GPS GPSAltitude', 'GPS GPSSpeed', 'GPS GPSImgDirection'
+    keys = ['EXIF DateTimeOriginal', 'Image Make', 'Image Model', 'EXIF BodySerialNumber','GPS GPSAltitude', 'GPS GPSSpeed', 'GPS GPSImgDirection', 'Latitude', 'Longitude'
     ]
+    md=pd.DataFrame()
+    #md.columns=keys
 
     for image_path in img_list:
         f = open(image_path, 'rb')
         tags = exifread.process_file(f, details=False)
-        exif_row = {key: str(tags[key]) for key in keys if key in tags.keys()}
-        if len(exif_row)==0:
-            exif_row=dict.fromkeys(keys,np.nan)
-        exif_row=pd.DataFrame(exif_row, index=[0])
+        exif_row=dict.fromkeys(keys,np.nan)
+        exif_row=exif_row | tags
+
+        exif_row=pd.DataFrame(exif_row, index=[0])[keys]
 
         try:
             coords=getGPS(tags)
@@ -58,16 +59,17 @@ def extract_metadata(source_dir):
     md['EXIF DateTimeOriginal']=pd.to_datetime(md['EXIF DateTimeOriginal'],  format='%Y:%m:%d %H:%M:%S', errors='coerce')
     df=pd.DataFrame()
 
-    df['Filename'], df['Camera Make'], df['Camera Model'], df['Serial Number']=md['Filename'], md['Image Make'], md['Image Model'], md['EXIF BodySerialNumber']
+    df['Filename'], df['Camera Make'], df['Camera Model'], df['Serial Number']=md['Filename'], md['Image Make'].astype(str), md['Image Model'].astype(str), md['EXIF BodySerialNumber']
     df['Date']=md['EXIF DateTimeOriginal'].dt.date
     df['Time']=md['EXIF DateTimeOriginal'].dt.time
     df['Direction']=md['GPS GPSImgDirection'].str.split('/').apply(lambda x: ratio(x))
     df['Altitude']=md['GPS GPSAltitude'].str.split('/').apply(lambda x: ratio(x))
     df['Speed']=md['GPS GPSSpeed'].str.split('/').apply(lambda x: ratio(x))
     df['Latitude'],df['Longitude']=md['Latitude'],md['Longitude']
+    print(df)
     df.to_csv('metadata.csv')
     return df
-
+    
 def _convert_to_degress(value):
     """
     Helper function to convert the GPS coordinates stored in the EXIF to degress in float format
@@ -159,5 +161,4 @@ def plot_pics(tempdir):
     emap.fit_bounds([sw, ne]) 
 
     emap.save("mymap.html")
-
     return emap

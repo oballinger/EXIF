@@ -8,6 +8,7 @@ import shutil
 import base64
 import PIL 
 import pillow_heif
+from pillow_heif import HeifImagePlugin
 from io import StringIO
 
 st.set_page_config(
@@ -29,18 +30,8 @@ def Ingest():
 	ex.overwrite(tempdir)
 	for uploaded_file in uploaded_files:
 		try:
-			if uploaded_file.type=="image/heic":
-				heif_file = pillow_heif.read_heif(uploaded_file)
-				img = Image.frombytes(
-				    heif_file.mode,
-				    heif_file.size,
-				    heif_file.data,
-				    "raw")
-				tags=heif_file.info['exif']
-			else:
-				img = Image.open(uploaded_file)
-				tags= img.getexif()
-
+			img = Image.open(uploaded_file)
+			tags= img.getexif()
 			filename=uploaded_file.name.split('.')[0]+'.jpg'
 			img.save(os.path.join(tempdir,filename), format='JPEG', optimize=True, quality=10, exif=tags)
 		except:

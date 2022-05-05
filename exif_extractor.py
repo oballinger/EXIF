@@ -31,7 +31,7 @@ def overwrite(dir):
         shutil.rmtree(dir)
     os.mkdir(dir)
 
-def extract_md(source_dir):
+def extract_metadata(source_dir):
 
     img_list=makelist(['.jpg', '.jpeg'], source_dir)
     md=pd.DataFrame()
@@ -137,7 +137,7 @@ def add_marker(row, emap):
 
 
 def plot_pics(tempdir):
-    df= extract_md(tempdir)
+    df= extract_metadata(tempdir)
 
     emap = folium.Map()
     #marker_cluster = folium.plugins.MarkerCluster().add_to(emap)

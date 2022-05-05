@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3fd93353f35b039683a728b410fc6a7a {
+                #map_ce22533dc69a78ce573825ed3fa91dd4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -36,17 +36,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3fd93353f35b039683a728b410fc6a7a" ></div>
+            <div class="folium-map" id="map_ce22533dc69a78ce573825ed3fa91dd4" ></div>
         
 </body>
 <script>    
     
-            var map_3fd93353f35b039683a728b410fc6a7a = L.map(
-                "map_3fd93353f35b039683a728b410fc6a7a",
+            var map_ce22533dc69a78ce573825ed3fa91dd4 = L.map(
+                "map_ce22533dc69a78ce573825ed3fa91dd4",
                 {
-                    center: [41.19155833333333, -103.99745833333334],
+                    center: [0, 0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 1,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -56,42 +56,696 @@
 
         
     
-            var tile_layer_ad59359ca4f432a289563dfbb23e5554 = L.tileLayer(
+            var tile_layer_fd2208397b3e5aec41c0dfbd2b76d0f5 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3fd93353f35b039683a728b410fc6a7a);
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
         
     
-            var tile_layer_4c81db7d4d03c4fb21846b0345fc0151 = L.tileLayer(
+            var tile_layer_b32de42282dff3502fa498a2790c1e34 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_3fd93353f35b039683a728b410fc6a7a);
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
         
     
-            var regular_polygon_marker_c4561b3d566fb842de53a1ef1f99f1e8 = new L.RegularPolygonMarker(
-                [41.19155833333333, -103.99745833333334],
-                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 1, "opacity": 1.0, "radius": 20, "rotation": 270.7045143638851, "stroke": true, "weight": 3}
-            ).addTo(map_3fd93353f35b039683a728b410fc6a7a);
+            var regular_polygon_marker_5fb68ae5522b48fbb6bdde48f1235beb = new L.RegularPolygonMarker(
+                [40.7133, -74.0094],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 346.41, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
         
     
-        var popup_fa959425355b8a161f2f69e119a886ee = L.popup({"maxWidth": "100%"});
+        var popup_c93b742583158c770f7f39e21e2054b8 = L.popup({"maxWidth": "100%"});
 
         
-            var i_frame_e105b05a833faad5cd1e89eeed8f4a6c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0idGVzdC9JTUdfNTUwNi5qcGciIHdpZHRoPTUwMHB4PiA8cD5oZWxsbyB3b3JsZDxwPg==" width="400" style="border:none !important;" height="300"></iframe>`)[0];
-            popup_fa959425355b8a161f2f69e119a886ee.setContent(i_frame_e105b05a833faad5cd1e89eeed8f4a6c);
+            var i_frame_35038cf94dbc12819f68b7f79f89ac0a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTg3LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTg3LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMjo0Mzo0Njxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDM0Ni40MTxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMy40Nzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MTMzPGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwOTQ8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_c93b742583158c770f7f39e21e2054b8.setContent(i_frame_35038cf94dbc12819f68b7f79f89ac0a);
         
 
-        regular_polygon_marker_c4561b3d566fb842de53a1ef1f99f1e8.bindPopup(popup_fa959425355b8a161f2f69e119a886ee)
+        regular_polygon_marker_5fb68ae5522b48fbb6bdde48f1235beb.bindPopup(popup_c93b742583158c770f7f39e21e2054b8)
         ;
 
         
     
     
-            regular_polygon_marker_c4561b3d566fb842de53a1ef1f99f1e8.bindTooltip(
+            regular_polygon_marker_5fb68ae5522b48fbb6bdde48f1235beb.bindTooltip(
                 `<div>
-                     <img src="test/IMG_5506.jpg" width=500px> <p>hello world<p>
+                     <img src="images/IMG_5187.jpg" width=500px> <p><strong>Filename:</strong> IMG_5187.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 02:43:46<br> <strong>Direction:</strong> 346.41<br> <strong>Altitude:</strong> 3.47<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7133<br> <strong>Longitude:</strong> -74.0094<br><p>
                  </div>`,
                 {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c3dfe46a25b5c181e4689433a0adedb6 = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 50.05, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_4c2bdc5b03493f099cba8090a2e2c51e = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_3d3f11ad1fbf3a5b1d23bf74150a38f0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTc4LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTc4LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1MzoyMTxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDUwLjA1PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_4c2bdc5b03493f099cba8090a2e2c51e.setContent(i_frame_3d3f11ad1fbf3a5b1d23bf74150a38f0);
+        
+
+        regular_polygon_marker_c3dfe46a25b5c181e4689433a0adedb6.bindPopup(popup_4c2bdc5b03493f099cba8090a2e2c51e)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_c3dfe46a25b5c181e4689433a0adedb6.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5178.jpg" width=500px> <p><strong>Filename:</strong> IMG_5178.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:53:21<br> <strong>Direction:</strong> 50.05<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_1b8d7807a64de581b510afad253ddb44 = new L.RegularPolygonMarker(
+                [51.4977, -0.1744],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 328.63, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_8b4b1f650b6ec68ff0b5a8095706256d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_ed51c43e99a8bda494cb4ca521b9015e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NjczIDIuanBnIiB3aWR0aD01MDBweD4gPHA+PHN0cm9uZz5GaWxlbmFtZTo8L3N0cm9uZz4gSU1HXzU2NzMgMi5qcGc8YnI+IDxzdHJvbmc+Q2FtZXJhIE1ha2U6PC9zdHJvbmc+IEFwcGxlPGJyPiA8c3Ryb25nPkNhbWVyYSBNb2RlbDo8L3N0cm9uZz4gaVBob25lIFhSPGJyPiA8c3Ryb25nPlNlcmlhbCBOdW1iZXI6PC9zdHJvbmc+IG5hbjxicj4gPHN0cm9uZz5EYXRlOjwvc3Ryb25nPiAyMDIxLTAzLTE1PGJyPiA8c3Ryb25nPlRpbWU6PC9zdHJvbmc+IDE3OjIyOjIwPGJyPiA8c3Ryb25nPkRpcmVjdGlvbjo8L3N0cm9uZz4gMzI4LjYzPGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMy44OTxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA1MS40OTc3PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTAuMTc0NDxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_8b4b1f650b6ec68ff0b5a8095706256d.setContent(i_frame_ed51c43e99a8bda494cb4ca521b9015e);
+        
+
+        regular_polygon_marker_1b8d7807a64de581b510afad253ddb44.bindPopup(popup_8b4b1f650b6ec68ff0b5a8095706256d)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_1b8d7807a64de581b510afad253ddb44.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5673 2.jpg" width=500px> <p><strong>Filename:</strong> IMG_5673 2.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-03-15<br> <strong>Time:</strong> 17:22:20<br> <strong>Direction:</strong> 328.63<br> <strong>Altitude:</strong> 13.89<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 51.4977<br> <strong>Longitude:</strong> -0.1744<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_2dd265031fafc4b25e349215bcb4343c = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 52.46, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_e16a981a72156dfe6ddce7eb2e475948 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_8a22db9717d234d369c99f5932716d52 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTc5LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTc5LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1NDo1NDxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDUyLjQ2PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_e16a981a72156dfe6ddce7eb2e475948.setContent(i_frame_8a22db9717d234d369c99f5932716d52);
+        
+
+        regular_polygon_marker_2dd265031fafc4b25e349215bcb4343c.bindPopup(popup_e16a981a72156dfe6ddce7eb2e475948)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_2dd265031fafc4b25e349215bcb4343c.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5179.jpg" width=500px> <p><strong>Filename:</strong> IMG_5179.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:54:54<br> <strong>Direction:</strong> 52.46<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_826feb93cc7d746d07beba4dace560f8 = new L.RegularPolygonMarker(
+                [40.7155, -74.0093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 355.21, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_31b1257bb22987dc64e50fd31a471c1c = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_bc915f527512f28bf73040beb7690b46 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTg2LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTg2LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMjo0Mzo0MTxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDM1NS4yMTxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMy40Nzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MTU1PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwOTM8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_31b1257bb22987dc64e50fd31a471c1c.setContent(i_frame_bc915f527512f28bf73040beb7690b46);
+        
+
+        regular_polygon_marker_826feb93cc7d746d07beba4dace560f8.bindPopup(popup_31b1257bb22987dc64e50fd31a471c1c)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_826feb93cc7d746d07beba4dace560f8.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5186.jpg" width=500px> <p><strong>Filename:</strong> IMG_5186.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 02:43:41<br> <strong>Direction:</strong> 355.21<br> <strong>Altitude:</strong> 3.47<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7155<br> <strong>Longitude:</strong> -74.0093<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_51b08276e4c96d98c1ec4778106ad4b5 = new L.RegularPolygonMarker(
+                [40.6934, -73.9907],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 1.14, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_db84491e51d8f7204a4989f2de58ad47 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_920b0e4409897fff8b9621b9d6490ff8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTkwLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTkwLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMzowNTo1Mjxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDEuMTQ8YnI+IDxzdHJvbmc+QWx0aXR1ZGU6PC9zdHJvbmc+IDIyLjE1PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQwLjY5MzQ8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtNzMuOTkwNzxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_db84491e51d8f7204a4989f2de58ad47.setContent(i_frame_920b0e4409897fff8b9621b9d6490ff8);
+        
+
+        regular_polygon_marker_51b08276e4c96d98c1ec4778106ad4b5.bindPopup(popup_db84491e51d8f7204a4989f2de58ad47)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_51b08276e4c96d98c1ec4778106ad4b5.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5190.jpg" width=500px> <p><strong>Filename:</strong> IMG_5190.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 03:05:52<br> <strong>Direction:</strong> 1.14<br> <strong>Altitude:</strong> 22.15<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.6934<br> <strong>Longitude:</strong> -73.9907<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_00a509937f0e60ac1ff97c5a04c1fde9 = new L.RegularPolygonMarker(
+                [51.5268, -0.0814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 123.05, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_320ee7026e2f25fd08b8027b7578fb84 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_cd2c3601e4c8c9d4543910202f13b168 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NjIwLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NjIwLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjEtMDItMTA8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMTg6NDA6Mjc8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAxMjMuMDU8YnI+IDxzdHJvbmc+QWx0aXR1ZGU6PC9zdHJvbmc+IDE3Ljk0PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDUxLjUyNjg8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtMC4wODE0PGJyPjxwPg==" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_320ee7026e2f25fd08b8027b7578fb84.setContent(i_frame_cd2c3601e4c8c9d4543910202f13b168);
+        
+
+        regular_polygon_marker_00a509937f0e60ac1ff97c5a04c1fde9.bindPopup(popup_320ee7026e2f25fd08b8027b7578fb84)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_00a509937f0e60ac1ff97c5a04c1fde9.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5620.jpg" width=500px> <p><strong>Filename:</strong> IMG_5620.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-02-10<br> <strong>Time:</strong> 18:40:27<br> <strong>Direction:</strong> 123.05<br> <strong>Altitude:</strong> 17.94<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 51.5268<br> <strong>Longitude:</strong> -0.0814<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_6aed82999630a547354e9e342aa2076b = new L.RegularPolygonMarker(
+                [40.7343, -74.0064],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 329.9, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_a03eb5b866e86a1b691d4fef6e67df82 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_71c4668764323a0b7608c84ff4965644 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTgxLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTgxLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMToxMzozNDxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDMyOS45PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiA4LjA1PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQwLjczNDM8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtNzQuMDA2NDxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_a03eb5b866e86a1b691d4fef6e67df82.setContent(i_frame_71c4668764323a0b7608c84ff4965644);
+        
+
+        regular_polygon_marker_6aed82999630a547354e9e342aa2076b.bindPopup(popup_a03eb5b866e86a1b691d4fef6e67df82)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_6aed82999630a547354e9e342aa2076b.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5181.jpg" width=500px> <p><strong>Filename:</strong> IMG_5181.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 01:13:34<br> <strong>Direction:</strong> 329.9<br> <strong>Altitude:</strong> 8.05<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7343<br> <strong>Longitude:</strong> -74.0064<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_31350a749a53c8eee1c0d663b29eb2fb = new L.RegularPolygonMarker(
+                [51.5268, -0.0816],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 164.18, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_2e91284b80980d0f0cdcd7b9639611c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_e77238a51e7114f46ea337394192f2d1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NTUzLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NTUzLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjEtMDEtMDY8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMTM6MTQ6MTk8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAxNjQuMTg8YnI+IDxzdHJvbmc+QWx0aXR1ZGU6PC9zdHJvbmc+IDE4LjA5PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiAwLjU3PGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA1MS41MjY4PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTAuMDgxNjxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_2e91284b80980d0f0cdcd7b9639611c8.setContent(i_frame_e77238a51e7114f46ea337394192f2d1);
+        
+
+        regular_polygon_marker_31350a749a53c8eee1c0d663b29eb2fb.bindPopup(popup_2e91284b80980d0f0cdcd7b9639611c8)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_31350a749a53c8eee1c0d663b29eb2fb.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5553.jpg" width=500px> <p><strong>Filename:</strong> IMG_5553.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-01-06<br> <strong>Time:</strong> 13:14:19<br> <strong>Direction:</strong> 164.18<br> <strong>Altitude:</strong> 18.09<br> <strong>Speed:</strong> 0.57<br> <strong>Latitude:</strong> 51.5268<br> <strong>Longitude:</strong> -0.0816<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_21e3a0bbf003aa6c209fea4eb4edd5e3 = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 51.38, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_38f5801721e25f735e4f7839245075d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_104117ad059f5bd42b2f46d5ef47f785 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTgwLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTgwLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1NTo0Mjxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDUxLjM4PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_38f5801721e25f735e4f7839245075d4.setContent(i_frame_104117ad059f5bd42b2f46d5ef47f785);
+        
+
+        regular_polygon_marker_21e3a0bbf003aa6c209fea4eb4edd5e3.bindPopup(popup_38f5801721e25f735e4f7839245075d4)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_21e3a0bbf003aa6c209fea4eb4edd5e3.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5180.jpg" width=500px> <p><strong>Filename:</strong> IMG_5180.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:55:42<br> <strong>Direction:</strong> 51.38<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_b513ef136145a74e4fba269bfd5b45c3 = new L.RegularPolygonMarker(
+                [40.7343, -74.0065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 324.81, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_2704d1f38ff94bd69470da89dde47ba6 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_1e61ade19317b4332f2c543d5937fbb1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTgyLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTgyLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMToxMzo0Mjxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDMyNC44MTxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gNy40Njxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzQzPGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwNjU8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_2704d1f38ff94bd69470da89dde47ba6.setContent(i_frame_1e61ade19317b4332f2c543d5937fbb1);
+        
+
+        regular_polygon_marker_b513ef136145a74e4fba269bfd5b45c3.bindPopup(popup_2704d1f38ff94bd69470da89dde47ba6)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_b513ef136145a74e4fba269bfd5b45c3.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5182.jpg" width=500px> <p><strong>Filename:</strong> IMG_5182.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 01:13:42<br> <strong>Direction:</strong> 324.81<br> <strong>Altitude:</strong> 7.46<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7343<br> <strong>Longitude:</strong> -74.0065<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_a884c338a32a1e7c9ec04691b8c928d6 = new L.RegularPolygonMarker(
+                [51.5268, -0.0815],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 346.49, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_43966d0257c96ccafe2bd2b3abbf2a75 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_0b30a6bbd38aa2f71fc2894acb7dbd06 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NDMwLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NDMwLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjAtMTEtMjQ8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMTE6MzM6MTA8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAzNDYuNDk8YnI+IDxzdHJvbmc+QWx0aXR1ZGU6PC9zdHJvbmc+IDE4LjI2PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiAwLjA2PGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA1MS41MjY4PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTAuMDgxNTxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_43966d0257c96ccafe2bd2b3abbf2a75.setContent(i_frame_0b30a6bbd38aa2f71fc2894acb7dbd06);
+        
+
+        regular_polygon_marker_a884c338a32a1e7c9ec04691b8c928d6.bindPopup(popup_43966d0257c96ccafe2bd2b3abbf2a75)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_a884c338a32a1e7c9ec04691b8c928d6.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5430.jpg" width=500px> <p><strong>Filename:</strong> IMG_5430.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2020-11-24<br> <strong>Time:</strong> 11:33:10<br> <strong>Direction:</strong> 346.49<br> <strong>Altitude:</strong> 18.26<br> <strong>Speed:</strong> 0.06<br> <strong>Latitude:</strong> 51.5268<br> <strong>Longitude:</strong> -0.0815<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_088c6ed5cb1fb56132d0ad5498034135 = new L.RegularPolygonMarker(
+                [40.7343, -74.0063],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 325.8, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_f2d8bbccff0c2f11eddba41fbd97ad01 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_3577d6a24fd3c811b4e8021ca3bdd61b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTgzLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTgzLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMToxMzo1NDxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDMyNS44PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiA4LjMzPGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiAxLjc8YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQwLjczNDM8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtNzQuMDA2Mzxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_f2d8bbccff0c2f11eddba41fbd97ad01.setContent(i_frame_3577d6a24fd3c811b4e8021ca3bdd61b);
+        
+
+        regular_polygon_marker_088c6ed5cb1fb56132d0ad5498034135.bindPopup(popup_f2d8bbccff0c2f11eddba41fbd97ad01)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_088c6ed5cb1fb56132d0ad5498034135.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5183.jpg" width=500px> <p><strong>Filename:</strong> IMG_5183.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 01:13:54<br> <strong>Direction:</strong> 325.8<br> <strong>Altitude:</strong> 8.33<br> <strong>Speed:</strong> 1.7<br> <strong>Latitude:</strong> 40.7343<br> <strong>Longitude:</strong> -74.0063<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c160feb76c24460efba09f1a85fe8abb = new L.RegularPolygonMarker(
+                [46.0124, 7.7631],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 240.26, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_f94b2eed354327b7608b003b247b305f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_8f903830e6707e40f44787e6f931f123 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR18wOTIzLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR18wOTIzLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjAtMDEtMzE8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMTM6NTM6MDE8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAyNDAuMjY8YnI+IDxzdHJvbmc+QWx0aXR1ZGU6PC9zdHJvbmc+IDIyODQuMzU8YnI+IDxzdHJvbmc+U3BlZWQ6PC9zdHJvbmc+IDAuMTM8YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQ2LjAxMjQ8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiA3Ljc2MzE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_f94b2eed354327b7608b003b247b305f.setContent(i_frame_8f903830e6707e40f44787e6f931f123);
+        
+
+        regular_polygon_marker_c160feb76c24460efba09f1a85fe8abb.bindPopup(popup_f94b2eed354327b7608b003b247b305f)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_c160feb76c24460efba09f1a85fe8abb.bindTooltip(
+                `<div>
+                     <img src="images/IMG_0923.jpg" width=500px> <p><strong>Filename:</strong> IMG_0923.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2020-01-31<br> <strong>Time:</strong> 13:53:01<br> <strong>Direction:</strong> 240.26<br> <strong>Altitude:</strong> 2284.35<br> <strong>Speed:</strong> 0.13<br> <strong>Latitude:</strong> 46.0124<br> <strong>Longitude:</strong> 7.7631<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de2279f9fe3bfefd4844244a7e1e4312 = L.marker(
+                [41.1782, -104.0576],
+                {"color": "red"}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_db7976ca535e772f4385b238162da05a = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_a7a824bf8d9c15962308ba4c09b801fa = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NTA4LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NTA4LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgNjxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAxNy0wOC0xMzxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAxMzoyNTowMzxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IG5hbjxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMTU1Ni4xNzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gMjMuNzk8YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQxLjE3ODI8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtMTA0LjA1NzY8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_db7976ca535e772f4385b238162da05a.setContent(i_frame_a7a824bf8d9c15962308ba4c09b801fa);
+        
+
+        marker_de2279f9fe3bfefd4844244a7e1e4312.bindPopup(popup_db7976ca535e772f4385b238162da05a)
+        ;
+
+        
+    
+    
+            marker_de2279f9fe3bfefd4844244a7e1e4312.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5508.jpg" width=500px> <p><strong>Filename:</strong> IMG_5508.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 6<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2017-08-13<br> <strong>Time:</strong> 13:25:03<br> <strong>Direction:</strong> nan<br> <strong>Altitude:</strong> 1556.17<br> <strong>Speed:</strong> 23.79<br> <strong>Latitude:</strong> 41.1782<br> <strong>Longitude:</strong> -104.0576<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_77a2c069c6dfc8bffdf4526b97d5cbca = new L.RegularPolygonMarker(
+                [41.6818, -93.0596],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 233.62, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_b60e37126147be4fdeac2b4d96d28208 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_88468c3564d9edf4deb6e91a7fbb9eda = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NDgyLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NDgyLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgNjxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAxNy0wOC0xMjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAxNToyNjo1NTxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDIzMy42Mjxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMjY5LjAzPGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQxLjY4MTg8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtOTMuMDU5Njxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_b60e37126147be4fdeac2b4d96d28208.setContent(i_frame_88468c3564d9edf4deb6e91a7fbb9eda);
+        
+
+        regular_polygon_marker_77a2c069c6dfc8bffdf4526b97d5cbca.bindPopup(popup_b60e37126147be4fdeac2b4d96d28208)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_77a2c069c6dfc8bffdf4526b97d5cbca.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5482.jpg" width=500px> <p><strong>Filename:</strong> IMG_5482.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 6<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2017-08-12<br> <strong>Time:</strong> 15:26:55<br> <strong>Direction:</strong> 233.62<br> <strong>Altitude:</strong> 269.03<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 41.6818<br> <strong>Longitude:</strong> -93.0596<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_45db7eaa51a24c1c17532cfb6abf7217 = new L.RegularPolygonMarker(
+                [50.7931, 0.0538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 277.27, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_b7f4c714c1952b8425c339c2dd87974b = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_bf0c343a8871a6462f3d0d90e0c8b368 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR18zNzUzLmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR18zNzUzLmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgU0UgKDJuZCBnZW5lcmF0aW9uKTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0wMjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAyMTozMTo0MDxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDI3Ny4yNzxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMy4zMTxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA1MC43OTMxPGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gMC4wNTM4PGJyPjxwPg==" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_b7f4c714c1952b8425c339c2dd87974b.setContent(i_frame_bf0c343a8871a6462f3d0d90e0c8b368);
+        
+
+        regular_polygon_marker_45db7eaa51a24c1c17532cfb6abf7217.bindPopup(popup_b7f4c714c1952b8425c339c2dd87974b)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_45db7eaa51a24c1c17532cfb6abf7217.bindTooltip(
+                `<div>
+                     <img src="images/IMG_3753.jpg" width=500px> <p><strong>Filename:</strong> IMG_3753.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone SE (2nd generation)<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-02<br> <strong>Time:</strong> 21:31:40<br> <strong>Direction:</strong> 277.27<br> <strong>Altitude:</strong> 3.31<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 50.7931<br> <strong>Longitude:</strong> 0.0538<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_87b1ba77b40d95e0864d7dbda6d90578 = new L.RegularPolygonMarker(
+                [51.766, -1.287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 137.2, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_ad1957a8285c59b7182e93ebe9a8e7c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_37ca7c7eebd6aab6badd5be6a09df1ba = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MDk0LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MDk0LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjAtMDgtMTA8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMTk6Mzk6NDY8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAxMzcuMjxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gNjIuMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA1MS43NjY8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtMS4yODc8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_ad1957a8285c59b7182e93ebe9a8e7c5.setContent(i_frame_37ca7c7eebd6aab6badd5be6a09df1ba);
+        
+
+        regular_polygon_marker_87b1ba77b40d95e0864d7dbda6d90578.bindPopup(popup_ad1957a8285c59b7182e93ebe9a8e7c5)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_87b1ba77b40d95e0864d7dbda6d90578.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5094.jpg" width=500px> <p><strong>Filename:</strong> IMG_5094.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2020-08-10<br> <strong>Time:</strong> 19:39:46<br> <strong>Direction:</strong> 137.2<br> <strong>Altitude:</strong> 62.3<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 51.766<br> <strong>Longitude:</strong> -1.287<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_47328572b123585baaeed9f2bd03531f = new L.RegularPolygonMarker(
+                [51.5268, -0.0814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 14.62, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_6b0504fa33377858c775df98c6e0d76f = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_b9b811a519c93f15cc0bf7df9429ff0f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MjU1LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MjU1LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgWFI8YnI+IDxzdHJvbmc+U2VyaWFsIE51bWJlcjo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkRhdGU6PC9zdHJvbmc+IDIwMjAtMTAtMDU8YnI+IDxzdHJvbmc+VGltZTo8L3N0cm9uZz4gMDA6MTM6MDM8YnI+IDxzdHJvbmc+RGlyZWN0aW9uOjwvc3Ryb25nPiAxNC42Mjxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMTcuODQ8YnI+IDxzdHJvbmc+U3BlZWQ6PC9zdHJvbmc+IG5hbjxicj4gPHN0cm9uZz5MYXRpdHVkZTo8L3N0cm9uZz4gNTEuNTI2ODxicj4gPHN0cm9uZz5Mb25naXR1ZGU6PC9zdHJvbmc+IC0wLjA4MTQ8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_6b0504fa33377858c775df98c6e0d76f.setContent(i_frame_b9b811a519c93f15cc0bf7df9429ff0f);
+        
+
+        regular_polygon_marker_47328572b123585baaeed9f2bd03531f.bindPopup(popup_6b0504fa33377858c775df98c6e0d76f)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_47328572b123585baaeed9f2bd03531f.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5255.jpg" width=500px> <p><strong>Filename:</strong> IMG_5255.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone XR<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2020-10-05<br> <strong>Time:</strong> 00:13:03<br> <strong>Direction:</strong> 14.62<br> <strong>Altitude:</strong> 17.84<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 51.5268<br> <strong>Longitude:</strong> -0.0814<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_cc3eb93de9fd98eea088f0f03c1f1a10 = new L.RegularPolygonMarker(
+                [41.1914, -103.9985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 221.69, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_e24a1f23e3de8f73e2ba0ae9a71934ed = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_58c9b767e822822638b46a32e476bb88 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NTA3LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NTA3LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgNjxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAxNy0wOC0xMzxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAxMzoyMjowNTxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDIyMS42OTxicj4gPHN0cm9uZz5BbHRpdHVkZTo8L3N0cm9uZz4gMTUyMS4zODxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gMjkuOTc8YnI+IDxzdHJvbmc+TGF0aXR1ZGU6PC9zdHJvbmc+IDQxLjE5MTQ8YnI+IDxzdHJvbmc+TG9uZ2l0dWRlOjwvc3Ryb25nPiAtMTAzLjk5ODU8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_e24a1f23e3de8f73e2ba0ae9a71934ed.setContent(i_frame_58c9b767e822822638b46a32e476bb88);
+        
+
+        regular_polygon_marker_cc3eb93de9fd98eea088f0f03c1f1a10.bindPopup(popup_e24a1f23e3de8f73e2ba0ae9a71934ed)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_cc3eb93de9fd98eea088f0f03c1f1a10.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5507.jpg" width=500px> <p><strong>Filename:</strong> IMG_5507.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 6<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2017-08-13<br> <strong>Time:</strong> 13:22:05<br> <strong>Direction:</strong> 221.69<br> <strong>Altitude:</strong> 1521.38<br> <strong>Speed:</strong> 29.97<br> <strong>Latitude:</strong> 41.1914<br> <strong>Longitude:</strong> -103.9985<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c66c24fe4082d46871a250aa37fe0796 = new L.RegularPolygonMarker(
+                [41.1916, -103.9975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 270.7, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_cacb4b91884177fc5dde870cb2a0023d = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_6051aa8479b796ddbe3e044bcc0a3489 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181NTA2LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181NTA2LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgNjxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAxNy0wOC0xMzxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAxMzoyMjowMjxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDI3MC43PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxNTE5Ljg2PGJyPiA8c3Ryb25nPlNwZWVkOjwvc3Ryb25nPiAzMC4wNzxicj4gPHN0cm9uZz5MYXRpdHVkZTo8L3N0cm9uZz4gNDEuMTkxNjxicj4gPHN0cm9uZz5Mb25naXR1ZGU6PC9zdHJvbmc+IC0xMDMuOTk3NTxicj48cD4=" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_cacb4b91884177fc5dde870cb2a0023d.setContent(i_frame_6051aa8479b796ddbe3e044bcc0a3489);
+        
+
+        regular_polygon_marker_c66c24fe4082d46871a250aa37fe0796.bindPopup(popup_cacb4b91884177fc5dde870cb2a0023d)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_c66c24fe4082d46871a250aa37fe0796.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5506.jpg" width=500px> <p><strong>Filename:</strong> IMG_5506.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 6<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2017-08-13<br> <strong>Time:</strong> 13:22:02<br> <strong>Direction:</strong> 270.7<br> <strong>Altitude:</strong> 1519.86<br> <strong>Speed:</strong> 30.07<br> <strong>Latitude:</strong> 41.1916<br> <strong>Longitude:</strong> -103.9975<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_84042db93aee7e3f9d2b330d7fb40deb = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 51.15, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_12b18852454fbdcdffb8bba12fbb86cb = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_42775af5262df1986ad02239e54ad583 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTc3LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTc3LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1MzoxNzxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDUxLjE1PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_12b18852454fbdcdffb8bba12fbb86cb.setContent(i_frame_42775af5262df1986ad02239e54ad583);
+        
+
+        regular_polygon_marker_84042db93aee7e3f9d2b330d7fb40deb.bindPopup(popup_12b18852454fbdcdffb8bba12fbb86cb)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_84042db93aee7e3f9d2b330d7fb40deb.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5177.jpg" width=500px> <p><strong>Filename:</strong> IMG_5177.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:53:17<br> <strong>Direction:</strong> 51.15<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_b52674fcef23b67a1123508081cae5f9 = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 53.93, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_cf031a38913c48758519fefa83c9442e = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_e87fa937ceac97b85b800a5fb44d155d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTc2LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTc2LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1MzoxMzxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDUzLjkzPGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_cf031a38913c48758519fefa83c9442e.setContent(i_frame_e87fa937ceac97b85b800a5fb44d155d);
+        
+
+        regular_polygon_marker_b52674fcef23b67a1123508081cae5f9.bindPopup(popup_cf031a38913c48758519fefa83c9442e)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_b52674fcef23b67a1123508081cae5f9.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5176.jpg" width=500px> <p><strong>Filename:</strong> IMG_5176.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:53:13<br> <strong>Direction:</strong> 53.93<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_102df416e5a55273e29da1f4694ed8cf = new L.RegularPolygonMarker(
+                [40.6934, -73.9908],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 354.9, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_b5765660893cd2c3abba03cbc129e7f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_5c93b28a692e58b7f94b8451fe1b0aa9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTg5LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTg5LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMzowNTo1Mjxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDM1NC45PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAyMi4zNTxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC42OTM0PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTczLjk5MDg8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_b5765660893cd2c3abba03cbc129e7f7.setContent(i_frame_5c93b28a692e58b7f94b8451fe1b0aa9);
+        
+
+        regular_polygon_marker_102df416e5a55273e29da1f4694ed8cf.bindPopup(popup_b5765660893cd2c3abba03cbc129e7f7)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_102df416e5a55273e29da1f4694ed8cf.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5189.jpg" width=500px> <p><strong>Filename:</strong> IMG_5189.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 03:05:52<br> <strong>Direction:</strong> 354.9<br> <strong>Altitude:</strong> 22.35<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.6934<br> <strong>Longitude:</strong> -73.9908<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_814577482afea1da28ed47b112beaba7 = new L.RegularPolygonMarker(
+                [40.7306, -74.0001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 20, "rotation": 55.15, "stroke": true, "weight": 3}
+            ).addTo(map_ce22533dc69a78ce573825ed3fa91dd4);
+        
+    
+        var popup_4f851cb6832e5e7bd1116c44885a4021 = L.popup({"maxWidth": "100%"});
+
+        
+            var i_frame_51dcd73f277d43b1c373ce3be3178c19 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aW1nIHNyYz0iaW1hZ2VzL0lNR181MTc1LmpwZyIgd2lkdGg9NTAwcHg+IDxwPjxzdHJvbmc+RmlsZW5hbWU6PC9zdHJvbmc+IElNR181MTc1LmpwZzxicj4gPHN0cm9uZz5DYW1lcmEgTWFrZTo8L3N0cm9uZz4gQXBwbGU8YnI+IDxzdHJvbmc+Q2FtZXJhIE1vZGVsOjwvc3Ryb25nPiBpUGhvbmUgMTIgbWluaTxicj4gPHN0cm9uZz5TZXJpYWwgTnVtYmVyOjwvc3Ryb25nPiBuYW48YnI+IDxzdHJvbmc+RGF0ZTo8L3N0cm9uZz4gMjAyMS0wOS0yNjxicj4gPHN0cm9uZz5UaW1lOjwvc3Ryb25nPiAwMDo1MzowOTxicj4gPHN0cm9uZz5EaXJlY3Rpb246PC9zdHJvbmc+IDU1LjE1PGJyPiA8c3Ryb25nPkFsdGl0dWRlOjwvc3Ryb25nPiAxMC4yMzxicj4gPHN0cm9uZz5TcGVlZDo8L3N0cm9uZz4gbmFuPGJyPiA8c3Ryb25nPkxhdGl0dWRlOjwvc3Ryb25nPiA0MC43MzA2PGJyPiA8c3Ryb25nPkxvbmdpdHVkZTo8L3N0cm9uZz4gLTc0LjAwMDE8YnI+PHA+" width="400" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_4f851cb6832e5e7bd1116c44885a4021.setContent(i_frame_51dcd73f277d43b1c373ce3be3178c19);
+        
+
+        regular_polygon_marker_814577482afea1da28ed47b112beaba7.bindPopup(popup_4f851cb6832e5e7bd1116c44885a4021)
+        ;
+
+        
+    
+    
+            regular_polygon_marker_814577482afea1da28ed47b112beaba7.bindTooltip(
+                `<div>
+                     <img src="images/IMG_5175.jpg" width=500px> <p><strong>Filename:</strong> IMG_5175.jpg<br> <strong>Camera Make:</strong> Apple<br> <strong>Camera Model:</strong> iPhone 12 mini<br> <strong>Serial Number:</strong> nan<br> <strong>Date:</strong> 2021-09-26<br> <strong>Time:</strong> 00:53:09<br> <strong>Direction:</strong> 55.15<br> <strong>Altitude:</strong> 10.23<br> <strong>Speed:</strong> nan<br> <strong>Latitude:</strong> 40.7306<br> <strong>Longitude:</strong> -74.0001<br><p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_ce22533dc69a78ce573825ed3fa91dd4.fitBounds(
+                [[40.6934, -104.0576], [51.766, 7.7631]],
+                {}
             );
         
 </script>

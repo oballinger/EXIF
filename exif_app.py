@@ -65,3 +65,19 @@ meta_button = st.button("Extract Metadata")
 if meta_button:
 	meta=ex.extract_metadata(tempdir)
 	st.write(meta)
+
+geo_button = st.button("Map Photographs")
+if geo_button:
+	static_dir = Path(st.__path__[0]) / 'static/images'
+
+	if static_dir.exists():
+		shutil.rmtree(static_dir)
+
+	shutil.copytree(str(tempdir), static_dir)
+	geo=ex.plot_pics(tempdir)
+	
+	HtmlFile = open("mymap.html", 'rb')
+	source_code = HtmlFile.read()		
+	components.html(source_code, height=720, width=720)
+
+
